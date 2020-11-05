@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Joguin</title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@600&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+<!-- header --> 
+    <div class="header">
+      <div>
+        <h1>Guess the number!</h1>
+      </div>
+    </div>
+      
+<!-- pc screen -->
+  <div class="screens">
+    <div class="pc">
+      <div class="choice-header">
+        <h2 class="choice-title">Computer choice:</h2>
+      </div>
+      <div>
+        <p class="choice-number-pc" id="choice-number-pc">?</p>
+      </div>
+      <div class="choice-button-pc">
+        <button class="minus-button"> - </button>
+        <button class="plus-button"> + </button>
+      </div> 
+      <div class='pc-wins'>
+        <p>Wins: </p>
+        <p id="pc-wins"> 0</p>
+      </div>
+    </div>
+
+<!-- user screen -->
+    <div class="user">
+      <div class="choice-header">
+        <h2 class="choice-title">Your choice:</h2>
+      </div>
+      <div>
+        <p class="choice-number-user" id="choice-number-user">0</p>
+      </div>
+      <div class="choice-button-user">
+        <button class="minus-button" id="minus-button"> - </button>
+        <button class="plus-button" id="plus-button"> + </button>
+      </div> 
+      <div class="user-wins" >
+        <p>Wins: </p>
+        <p id="user-wins"> 0</p>
+      </div> 
+      </div>
+    </div>
+
+<!-- target -->
+<div class="target">
+  <p>Target Number:</p>
+  <p id="target">?</p>
+</div>
+
+<!-- round number -->
+<div class="round">
+  <p>Round number: </p> 
+  <p class="round-number" id="round-number">0</p>
+</div>
+
+<!-- footer -->
+      <div class="footer">
+        <button class="start-button" id="start-button">Start!</button>
+        <button class="restart-button" id="restart-button">Restart!</button>
+      </div>
+
+<script src="script.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,134 @@
+html {
+  display: flex;
+  justify-content: center;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 500px;
+  background-image: url(./background2.PNG);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: auto;
+}
+.header {
+  display: flex;
+  align-self: center;
+  font-family: "Pacifico";
+  border: 1px solid black;
+  border-radius: 30px;
+  width: 370px;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0.9);
+  box-shadow: 2px 2px black;
+}
+.screens {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+}
+.user,
+.pc {
+  display: flex;
+  flex-direction: column;
+  border: 4px solid black;
+  margin: 9px;
+  background-color: rgb(255, 220, 214, 0.9);
+  box-shadow: 4px 4px rgb(255, 220, 214, 0.9);
+}
+.pc {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  align-items: center;
+}
+.user {
+  width: 250px;
+  height: 250px;
+  border-radius: 20px;
+  align-items: center;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+  margin: 9px;
+  align-self: center;
+  align-items: center;
+}
+.start-button {
+  height: 30px;
+  border-radius: 5px;
+  width: 250px;
+}
+
+.restart-button {
+  width: 100px;
+  border-radius: 5px;
+}
+.minus-button,
+.plus-button {
+  width: 25px;
+  height: 25px;
+  border-radius: 25%;
+}
+
+.choice-title {
+  font-family: "Pacifico";
+}
+
+.pc-wins,
+.user-wins {
+  display: flex;
+  flex-direction: row;
+  font-family: "Grandstander";
+  font-size: 20px;
+}
+
+button {
+  background-color: rgb(255, 255, 255, 0.9);
+  font-family: "Josefin Sans";
+  box-shadow: 2px 2px rgb(255, 220, 214);
+}
+button:active {
+  background-color: rgb(239, 223, 223);
+  box-shadow: 0px 0px;
+}
+
+.choice-number-user,
+.choice-number-pc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans";
+  border: 1px solid black;
+  border-radius: 25%;
+  height: 40px;
+  width: 40px;
+  background-color: rgb(255, 255, 255, 0.6);
+}
+
+.round {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-family: "Josefin Sans";
+}
+
+.target {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  font-family: "Josefin Sans";
+}
+
+.choice-button-pc {
+  visibility: hidden;
+}
